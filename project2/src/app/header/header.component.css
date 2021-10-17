@@ -1,0 +1,45 @@
+#header{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    transition: 0.2s;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.header_content{
+    width: 85%;
+    /* margin-left: 120px; */
+    /* margin-right: 80px; */
+    height: 60px;
+}
+.header_rightside{
+    margin-right: 25px;
+}
+.navbar-brand{
+    border-radius: 50%;
+    width: 80px;
+    height: 60px;
+}
+
+.navbar{
+    font-weight: 700;
+    background-color: rgba(9, 75, 149, 0.97);
+    
+}
+.brand_name{
+    font-size: 22px;
+}
+.nav_links{
+    color:white !important;
+}
+
+.nav_links:hover{
+    color: orange !important;
+}
+
+.active1{
+    color: orange !important;
+}
+
+

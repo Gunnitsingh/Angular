@@ -1,0 +1,47 @@
+<nav class="navbar navbar-light bg-light">
+
+    <div class="container-fluid">
+
+        <a class="navbar-brand">Admin Portal</a><button class="btn btn-primary" [routerLink]="['']" routerLinkActive="router-link-active" >Home</button>
+
+        <form class="d-flex">
+
+            <input class="form-control me-2" type="search" placeholder="Search by Customer ID" aria-label="Search"
+                #search>
+
+            <button class="btn btn-primary" type="submit">Search</button>
+
+        </form>
+
+    </div>
+
+</nav>
+
+<div class="container-fluid">
+    <table class="table">
+        <thead class="table-primary">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">CustomerId</th>
+                <th scope="col">CustomerName</th>
+                <th scope="col">CustomerPhone</th>
+                <th scope="col">Product</th>
+                <th scope="col"></th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let customer of customers;let i=index">
+                <td>{{i+1}}</td>
+             <td #cus_id>{{customer.cust_id}}</td><td>{{customer.cust_name}}</td> 
+            <td>{{customer.cust_number}}</td><td>{{customer.my_policies}}</td>
+            <td></td>
+            <td><a [routerLink]="['/admin', customer.cust_id]" class="text-decoration-none" >Edit</a>
+           <!-- <a href=""  class="text-decoration-none" (click)="onDelete(cus_id)">/Delete</a> -->
+            </td>
+        </tbody>
+    </table>
+</div>
+<div>
+    <router-outlet></router-outlet>
+</div>

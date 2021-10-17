@@ -1,0 +1,13 @@
+.footer{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+.footer_links{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.footer_links:hover{
+    color: orange;
+}

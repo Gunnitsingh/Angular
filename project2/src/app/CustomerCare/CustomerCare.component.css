@@ -1,0 +1,7 @@
+.carousel-inner{
+    padding-bottom: 100px;
+}
+.pic{
+    background-image: url("../../assets/images/back.jfif");
+    background-size: cover;
+}

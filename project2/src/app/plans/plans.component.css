@@ -1,0 +1,98 @@
+*{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#button1{
+    margin-left: 3px;
+    background-color: rgba(9, 75, 149, 0.97);
+}
+#button2{
+    margin-left: 15px;
+    background-color: rgba(9, 75, 149, 0.97);
+}
+.container{
+    padding-top: 20px;
+    margin-top: 20px;
+    margin-left: 100px;
+    height: 420px;
+}
+.card{
+    
+    float: left;
+    margin-left: 22px;
+    transition: translateY(-10px);
+    border-radius: 15px;
+
+    background-color:linear-gradient(rgba(0,0,0.6,0.6),rgba(0, 1, 0, 0.6))
+}
+
+.card-img-top{
+    background-size: cover;
+    height: 300px;
+    opacity: 0.8;
+    filter:grayscale(0);
+   
+}
+.card-img-top:hover{
+    filter: grayscale(1);
+}
+.button{
+    margin-top: 7px;
+    margin-left: 33px;
+    margin-bottom: 10px;
+}
+.card-body{
+    background-color: white;
+    text-align: center;
+}
+.list-group-item{
+background:transparent;
+color:black;
+
+}
+.card{
+    position: relative;
+    width:20rem;
+   
+    
+}
+.card ul{
+    position: absolute;
+    background: transparent;
+    color:black;
+    font-family: sans-serif;
+    opacity: 0;
+    font-weight: bold;
+    visibility: hidden;
+    -webkit-transition: visibility 0s,opacity 0.5s linear;
+    transition: visibility 0s,opacity 0.5s linear;
+    
+}
+.card:hover{
+    cursor: pointer;
+    transition: 1s ease;
+}
+.card:hover ul{
+    margin-top: 60px;
+    width: 250px;
+    color: black;
+    padding: 8px 15px;
+    visibility: visible;
+    opacity: 0.7;
+    transform: translateY(-50px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,69 @@
+<app-header></app-header>
+<div class="container mt-4 shadow">
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <img src="../../assets/cimg.png" height="100%" width="100%">
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <form action="" [formGroup]="form" (ngSubmit)="onSubmit()">
+                        <h2 class="text-center py-4">E-policy Customer Form</h2>
+                        <div>
+                            <label for="">Customer Id</label>
+                            <input type="text" class="form-control" formControlName="cust_id" #id>
+                            <span *ngIf="!form.get('cust_id').valid && form.get('cust_id').touched">
+                            <p>Please enter Customer Id</p>
+                        </span>
+                        </div>
+                        <div>
+                            <label for="">Name</label>
+                            <input type="text" class="form-control" formControlName="cust_name" #name>
+                            <span *ngIf="!form.get('cust_name').valid && form.get('cust_name').touched">
+                            <p>Please enter Username</p>
+                        </span>
+                        </div>
+                        <div>
+                            <label for="">Address</label>
+                            <input type="text" class="form-control" formControlName="cust_address" #add> 
+                            <span *ngIf="!form.get('cust_address').valid && form.get('cust_address').touched">
+                            <p>Please enter Address</p>
+                        </span>
+                        </div>
+                        <div>
+                            <label for="">Phone Number</label>
+                            <input type="text" class="form-control" formControlName="cust_number">
+                            <span *ngIf="!form.get('cust_number').valid && form.get('cust_number').touched">
+                            <p>Please enter Phone Number</p>
+                        </span>
+                        </div>  
+                        <div>
+                            <label for="">Policy</label>
+                            <select class="form-control" formControlName="my_policies"  >
+                                <option *ngFor="let item of policy" [value]="item" [selected]="pol" >{{item}}</option>
+                            </select>  
+                            <span *ngIf="!form.get('my_policies').valid && form.get('my_policies').touched">
+                            <p>Please select One Policy</p>
+                            </span>
+                        </div>
+                        <div class="text-center p-2 m-2">
+                            <button class="btn btn-outline-primary btn-lg " type="submit" >Submit</button>
+                            <button class="btn btn-outline-primary btn-lg" type="button" (click)="onGet()" >data</button>
+                            <button class="btn btn-outline-primary btn-lg" type="button" (click)="onSearch(id.value)" >Search</button>
+                            <button class="btn btn-outline-primary btn-lg" type="button" (click)="onDelete(id.value)" >Delete</button>
+                        </div>
+                        
+                        <!-- <div *ngIf="istrue">
+                            <p>{{userdata.cust_id}}</p>
+                            <p>{{userdata.cust_name}}</p>
+                            <p>{{userdata.cust_address}}</p>
+                            <p>{{userdata.my_policies}}</p>
+                            <p>{{userdata.cust_number}}</p>
+                        </div> -->
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

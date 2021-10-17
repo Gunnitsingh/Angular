@@ -1,0 +1,16 @@
+<hr>
+<div class="card_font">
+    <div class="top-heading">
+        <h1>What's Trending</h1>
+    </div>
+
+    <div class="container d-flex flex-wrap ">
+        <div class="card " *ngFor="let i of coursesData">
+            <a href="" class="btn">
+                <img [ngClass]="'img'" src={{i.cousreSrc}}>
+            </a>
+            <h5 class="card-title">{{i.cardTitle}}</h5>
+            <span class="description">{{i.carddesc}}</span>
+        </div>
+    </div>
+</div>

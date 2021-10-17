@@ -1,0 +1,78 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h3 class="heading">CUSTOMER DETAILS</h3>
+    </div>
+    <div class="col-12" *ngFor="let item of formData">
+      <form [formGroup]="adminform" (ngSubmit)="onSubmit(adminform)" *ngIf="user.id==item.cust_id">
+        <div class="row">
+          <div class="form-group col-6">
+            <label>Customer ID: </label>
+            <input type="text" class="form-control" id="inputCustomerID" disabled="true" [value]="item.cust_id">
+          </div>
+          <div class="form-group col-6">
+            <label>Customer Name:</label>
+            <input type="text" class="form-control" id="inputCustomerName" disabled="true" [value]="item.cust_name">
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-6">
+            <label>Contact Number:</label>
+            <input type="text" class="form-control" id="inputCustNumber" disabled="true" [value]="item.cust_number">
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-12">
+            <label for="inputAddress2">Address</label>
+            <input type="text" class="form-control" id="inputAddress2" disabled="true" [value]="item.cust_address">
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-6">
+            <label>Product/Policy: </label>
+            <input type="text" class="form-control" id="inputCustPolicy" disabled="true" [value]="item.my_policies">
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-6">
+            <label>Policy Exclusion: </label>
+              <input type="text" formControlName="policyexclusion" class="form-control" id="inputPolicyExclusion" [value]="">
+          </div>
+          <div class="form-group col-6">
+            <label>Policy Coverage:</label>
+            <input type="text" formControlName="policycoverage"  class="form-control" id="inputPolicyCoverage" >
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-6">
+            <label>Installment Period: </label>
+            <input type="text" class="form-control" id="inputInstallPeriod" disabled="true" [value]="'12 Months'">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="form-group col-6">
+            <label>Start Date: </label>
+            <input type="date" formControlName="startdate" class="form-control" id="strDate">
+          </div>
+          <div class="form-group col-6">
+            <label>End Date: </label>
+              <input type="date" formControlName="enddate" class="form-control" id="endDate">
+          </div>
+        </div><br>
+        <button type="submit" class="btn btn-primary">Update</button>
+      </form>
+
+    </div>
+  </div>
+</div>
+<!-- <div class="container">
+  <div class="row">
+    <div class="col-6">
+
+    </div>
+    <div class="col-6">
+
+    </div>
+  </div>
+</div> -->

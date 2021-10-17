@@ -1,0 +1,53 @@
+<app-header></app-header>
+<div class="container mt-4 shadow">
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <img src="../../assets/cimg.png" height="100%" width="100%">
+        </div>
+        <div class="col-md-6 mb-4">
+            <form action="" [formGroup]="form" (ngSubmit)="onSubmit()">
+                <h2 class="text-center py-4">Claim Form</h2>
+                <div>
+                    <label for="">Customer Id</label>
+                    <input type="text" class="form-control" formControlName="id">
+                    <span *ngIf="!form.get('id').valid && form.get('id').touched">
+                    <p>Please enter Customer Id</p>
+                </span>
+                </div>
+                <div>
+                    <label for="">Place of Claim</label>
+                    <input type="text" class="form-control" formControlName="place">
+                    <span *ngIf="!form.get('place').valid && form.get('place').touched">
+                    <p>Please enter Place of claim</p>
+                </span>
+                </div>
+                <div>
+                    <label for="">Claim Type</label>
+                    <input type="text" class="form-control" formControlName="type">
+                    <span *ngIf="!form.get('type').valid && form.get('type').touched">
+                    <p>Please enter Claim Type</p>
+                </span>
+                </div>
+                
+                <!-- <label for="">Policy</label>
+                <select class="form-control" formControlName="Policy"  >
+                    <option *ngFor="let item of policy" [value]="item" [selected]="2">{{item}}</option>
+                </select>  
+                <span *ngIf="!form.get('Policy').valid && form.get('Policy').touched">
+                    <p>Please select One Policy</p>
+                </span>
+                <label for="">@mail</label>
+                <input type="text" class="form-control" formControlName="email">
+                <span *ngIf="!form.get('email').valid && form.get('email').touched">
+                    <p>Please enter Email</p>
+                </span>
+                <label for=""></label>
+                <input type="text" class="form-control" > -->
+                <div class="text-center p-2">
+                    <button class="btn btn-outline-primary btn-lg">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

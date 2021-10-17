@@ -1,0 +1,11 @@
+<h2></h2>
+
+<div class="container" style="text-align: center;">
+    <form [formGroup]="claimform" (ngSubmit)="onSubmit(claimform)">
+        <label><h3>Enter Customer Id:</h3></label>
+        <input type="text" placeholder="Enter the customer id to view the details...." formControlName="id"  class="form-control w-50" style="margin-left: 300px;"><br><br>
+        <button class="btn btn-primary" type="submit">Submit Id</button>
+    </form>
+</div>
+
+

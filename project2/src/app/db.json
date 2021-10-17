@@ -1,0 +1,92 @@
+{
+  "user": [
+    {
+      "cust_id": "1",
+      "cust_name": "James",
+      "cust_address": "25 Warner Street",
+      "cust_number": "9994744563",
+      "my_policies": "Individual Plan",
+      "id": 1
+    },
+    {
+      "cust_id": "2",
+      "cust_name": "ronak",
+      "cust_address": "55 Arab Street",
+      "cust_number": "84756387658",
+      "my_policies": "Children`s Plan",
+      "id": 2
+    },
+    {
+      "cust_id": "3",
+      "cust_name": "akshay",
+      "cust_address": "rajouri garden,delhi",
+      "cust_number": "7463875678",
+      "my_policies": "Children`s Plan",
+      "id": 3
+    },
+    {
+      "cust_id": "4",
+      "cust_name": "Arun",
+      "cust_address": "Ghaziabad",
+      "cust_number": "74837473874",
+      "my_policies": "Children`s Plan",
+      "id": 4
+    },
+    {
+      "cust_id": "5",
+      "cust_name": "anuj",
+      "cust_address": "kashmiri gate,delhi",
+      "cust_number": "76487376487",
+      "my_policies": "Family Health floater",
+      "id": 5
+    },
+    {
+      "cust_id": "6",
+      "cust_name": "jatin",
+      "cust_address": "Inderlok,delhi",
+      "cust_number": "8743987658",
+      "my_policies": "Old Age Plan",
+      "id": 6
+    },
+    {
+      "cust_id": "7",
+      "cust_name": "varun",
+      "cust_address": "Shastri nagar,delhi",
+      "cust_number": "8936476587",
+      "my_policies": "Children`s Plan",
+      "id": 7
+    },
+    {
+      "cust_id": "8",
+      "cust_name": "Saurab",
+      "cust_address": "Palam",
+      "cust_number": "887655555",
+      "my_policies": "Individual Plan",
+      "id": 8
+    },
+    {
+      "cust_id": "9",
+      "cust_name": "Guneet",
+      "cust_address": "Delhi",
+      "cust_number": "98776543210",
+      "my_policies": "Family Health floater",
+      "id": 9
+    },
+    {
+      "cust_id": "12",
+      "cust_name": "xyx",
+      "cust_address": "Delhi",
+      "cust_number": "888888888",
+      "my_policies": "Individual Plan",
+      "id": 10
+    },
+    {
+      "cust_id": "10",
+      "cust_name": "Guneet",
+      "cust_address": "Delhi",
+      "cust_number": "98765654444",
+      "my_policies": "Individual Plan",
+      "id": 11
+    }
+  ]
+}

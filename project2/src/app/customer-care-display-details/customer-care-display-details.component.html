@@ -1,0 +1,75 @@
+
+<div *ngFor="let item of fdata">
+    
+
+    <div *ngIf="item.cust_id === localvalue">
+        
+
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-6">
+                        
+                        <h1 class="heading"><u>Customer Details</u></h1>
+                            
+                                <h3 class="title">Customer ID:
+                                    {{item.cust_id}} </h3>
+                                    <br>
+                              
+                                <h3 class="title">Customer Name: {{item.cust_name}}</h3><br>
+                                
+                                <h3 class="title">Customer Number: {{item.cust_number}}</h3><br>
+                                
+                                <h3 class="title">Customer Address: {{item.cust_address}}</h3><br>
+                               
+                                <form action="/action_page.php">
+
+                                    <h3><label class="title" for="Policy">Choose Policy:</label></h3> 
+             
+                                     <select name="dropdown-menu" id="Policy">
+             
+                                         <option value="Individual">Individual Insurance</option>
+             
+                                         <option value="Family">Family Insurance</option>
+             
+                                         <option value="Children">Children Insurance</option>
+             
+                                         <option value="Oldage">Oldage Insurance</option>
+             
+                                     </select>
+             
+                                     <br><br>
+             
+                                 </form>
+                    </div>
+                </div>
+
+                <form class="form-inline">
+                    <div class="form-group">
+                        <h3><label for="FormControlTextarea" class="title">Comments:</label></h3>
+                        <textarea class="form-control" placeholder="Reason for Rejection" id="FormControlTextarea"
+                            rows="3" #text></textarea>
+                    </div>
+                    <br>
+                    <br />
+                    
+                         <button type="submit" [disabled]="disabled1" class="btn">Accept</button>
+                         
+                    <br>
+                    <br/>
+                    <button type="submit"  class="btn-default"
+                        (click)="($event)">Reject</button> 
+                    
+                   
+                </form>
+
+         
+    </div>
+    </div>
+
+
+</div>
