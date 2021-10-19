@@ -1,0 +1,16 @@
+<div class="row">
+    <div class="col-12">
+        <label for="text"> Contact Name</label>
+        <input type="text" class="form-control" #contactName>
+        <label for="text"> Phone Number</label>
+        <input type="text" class="form-control" #phoneNumber>
+        <label for="text"> @mail</label>
+        <input type="email" class="form-control" #email>
+        
+
+        <button class="btn btn-primary" (click)="onAddContact(contactName.value,phoneNumber.value,email.value)">Add Contact</button>
+        <button class="btn btn-danger" (click)="onDeleteContact(contactName.value)">Delete</button>
+        <button class="btn btn-primary" (click)="onSearchContact(contactName.value)">Search</button>
+    </div>
+</div>
+<app-search></app-search>
