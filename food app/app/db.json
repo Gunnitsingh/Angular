@@ -1,0 +1,89 @@
+{
+    "restaurants": [
+      {
+        
+        "rest_name": "Salad Bar",
+        "rest_address": "Paschim vihar",
+        "rest_number": "9994744563",
+        "id": 1,
+        "amount" : 450
+      },
+      {
+        "rest_name": "Om Sweets",
+        "rest_address": "Punjabi Bagh",
+        "rest_number": "9994744563",
+        "id": 2,
+        "amount" : 1450
+      },
+      {
+        "rest_name": "Mr.Pao",
+        "rest_address": "Punjabi Bagh",
+        "rest_number": "9994744563",
+        "id": 3,
+        "amount" : 850
+      },
+      {
+        "rest_name": "Fresh Menu",
+        "rest_address": "Paschim Vihar",
+        "rest_number": "9994744563",
+        "id": 4,
+        "amount" : 750
+      },
+      {
+        "rest_name": "Chai Point",
+        "rest_address": "Gurgoan",
+        "rest_number": "9994744563",
+        "id": 5,
+        "amount" : 2350
+      },
+      {
+        "rest_name": "Bikaner",
+        "rest_address": "Sector 20, Gurgoan",
+        "rest_number": "9994744563",
+        "id": 6,
+        "amount" : 640
+      },
+      {
+        "rest_name": "Chaayos",
+        "rest_address": "Gurgoan",
+        "rest_number": "9994744563",
+        "id": 7,
+        "amount" : 550
+      },
+      {
+        "rest_name": "Subway",
+        "rest_address": "Gurgoan",
+        "rest_number": "9994744563",
+        "id": 8,
+        "amount" : 1150
+      },
+      {
+        "rest_name": "McDonalds",
+        "rest_address": "Gurgoan",
+        "rest_number": "9994744563",
+        "id": 9,
+        "amount" : 250
+      },
+      {
+        "rest_name": "KFC",
+        "rest_address": "Cyber City",
+        "rest_number": "9994744563",
+        "id": 10,
+        "amount" : 2350
+      },
+      {
+        "rest_name": "Burger King",
+        "rest_address": "Noida",
+        "rest_number": "9994744563",
+        "id": 11,
+        "amount" : 1250
+      },
+      {
+        "rest_name": "Burger Club",
+        "rest_address": "Noida",
+        "rest_number": "9994744563",
+        "id": 12,
+        "amount" : 980
+      }
+    ]
+  }
